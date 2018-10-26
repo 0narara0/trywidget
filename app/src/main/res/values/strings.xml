@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">trywidget</string>
+    <string name="name">이름을 입력하세요</string>
+    <string name="age">나이를 입력하세요</string>
+</resources>
