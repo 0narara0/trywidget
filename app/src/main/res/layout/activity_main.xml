@@ -38,16 +38,19 @@
         android:layout_height="wrap_content"
         android:text="성별"/>
     <RadioGroup
+        android:orientation="horizontal"
         android:id="@+id/radiogroupgender"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <RadioButton
             android:id="@+id/rbtn1"
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="여자"/>
         <RadioButton
             android:id="@+id/rbtn2"
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="남자"/>
@@ -59,16 +62,19 @@
         android:text="직업"/>
 
     <RadioGroup
+        android:orientation="horizontal"
         android:id="@+id/radiogroupjob"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <RadioButton
             android:id="@+id/rbtn3"
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="학생"/>
         <RadioButton
             android:id="@+id/rbtn4"
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="직장인"/>
