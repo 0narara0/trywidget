@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
+                          // extends AppCompatActivity -> 높은 버전으로 해도 이전버전 기능 흡수
         implements View.OnClickListener, RadioGroup.OnCheckedChangeListener, View.OnKeyListener {
 
     Button btn1, btn2, btn3;
@@ -35,15 +36,20 @@ public class MainActivity extends AppCompatActivity
         btn2.setOnClickListener(this);
         btn3 = (Button) findViewById(R.id.btn3);
         btn3.setOnClickListener(this);
+
         editText1 = (EditText)findViewById(R.id.edittext1);
         editText1.setOnKeyListener(this);
         editText2 = (EditText)findViewById(R.id.edittext2);
         editText2.setOnKeyListener(this);
+
+
         textview = (TextView)findViewById(R.id.textviewresult);
+
         radioGroup1 =(RadioGroup)findViewById(R.id.radiogroupgender);
         radioGroup2 =(RadioGroup)findViewById(R.id.radiogroupjob);
         radioGroup1.setOnCheckedChangeListener(this);
         radioGroup2.setOnCheckedChangeListener(this);
+
         rbtn1 =(RadioButton)findViewById(R.id.rbtn1);
         rbtn2 =(RadioButton)findViewById(R.id.rbtn2);
         rbtn3 =(RadioButton)findViewById(R.id.rbtn3);
